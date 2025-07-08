@@ -1,5 +1,5 @@
 package com.TNSIF.dayEight.MarkerDemo;
 
-public class isRegistered {
+public interface isRegistered {
 
 }
