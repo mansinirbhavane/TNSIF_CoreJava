@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>4-Player Dice Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎲 4-Player Dice Game 🎲</h1>
+
+  <div class="dice-container">
+    <div class="player">
+      <h2>Player 1</h2>
+      <img src="images/dice1.png" id="dice1" class="dice" />
+      <br />
+      <button onclick="rollSingleDice(1)">Roll</button>
+    </div>
+
+    <div class="player">
+      <h2>Player 2</h2>
+      <img src="images/dice1.png" id="dice2" class="dice" />
+      <br />
+      <button onclick="rollSingleDice(2)">Roll</button>
+    </div>
+
+    <div class="player">
+      <h2>Player 3</h2>
+      <img src="images/dice1.png" id="dice3" class="dice" />
+      <br />
+      <button onclick="rollSingleDice(3)">Roll</button>
+    </div>
+
+    <div class="player">
+      <h2>Player 4</h2>
+      <img src="images/dice1.png" id="dice4" class="dice" />
+      <br />
+      <button onclick="rollSingleDice(4)">Roll</button>
+    </div>
+  </div>
+
+  <br />
+  <div class="button-group">
+    <button onclick="checkWinner()" class="check-btn">Check Winner</button>
+    <button onclick="newRound()" class="new-round-btn">New Round</button>
+  </div>
+
+  <h2 id="result"></h2>
+
+  <script src="script.js"></script>
+</body>
+</html>
